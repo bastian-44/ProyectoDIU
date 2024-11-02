@@ -1,0 +1,17 @@
+.acordeon {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.acordeon-titulo {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.acordeon-contenido {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
