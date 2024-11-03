@@ -15,3 +15,12 @@
   background-color: #f9f9f9;
   border-top: 1px solid #ddd;
 }
+
+.navlink {
+  color: inherit; /* Usa el mismo color que el texto circundante */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+.navlink:hover {
+  text-decoration: underline; /* Opcional: subrayado al pasar el cursor */
+}
