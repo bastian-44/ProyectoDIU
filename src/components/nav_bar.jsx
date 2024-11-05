@@ -26,9 +26,9 @@ export const NavBar = () => {
         <NavLink
 
           className={navLinkClass}
-          to='/lightbulb'
+          to='/forum'
         >
-          Ampolleta
+          Foro
         </NavLink>
       </div>
 
