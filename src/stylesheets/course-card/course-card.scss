@@ -18,6 +18,6 @@
     }
 
     &:visited {
-        color: inherit;  // Ensures visited links don’t change color
+        color: inherit;  // Avoids color change and underlining after clicking a card
       }
 }

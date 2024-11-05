@@ -1,23 +1,29 @@
-import React, { useState } from 'react';
-
+import React from 'react';
+import { useParams, Outlet } from 'react-router-dom';
 import CourseNavbar from '../components/CourseNavbar';
 import LightBulbOn from '../assets/light-on.png';
 import LightBulbOff from '../assets/light-off.png';
+import coursesData from '../data/coursesData';
 
-export const LightbulbPage = () => {
-  const [isOn, setIsOn] = useState(false);
+export const CoursePage = () => {
+  const { courseId } = useParams();
+  const course = coursesData.find(course => course.id === parseInt(courseId));
+
+  if (!course) {
+    return <p>El curso no existe</p>;
+  }
 
   return (
-    <div className='lightbulb-page'>
-      <p>Presiona el botón para encender o apagar la ampolleta</p>
-      <img src={isOn ? LightBulbOn : LightBulbOff} height={130} alt='ampolleta' />
-      <br />
-      <br />
-      <button onClick={() => setIsOn(!isOn)}>
-        {isOn ? 'Apagar' : 'Encender'}
-      </button>
+    <div className='course-page'>
+      
+      <h1>{course.semester} {course.initials} {course.title} </h1> 
+      <CourseNavbar />
+      <div className="course-page__content">
+      <Outlet /> {/* This renders nested routes (home, forum, grades..) */}
+      </div>
+      <br/>
     </div>
   )
 };
 
-export default LightbulbPage;
+export default CoursePage;

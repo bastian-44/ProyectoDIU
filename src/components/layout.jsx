@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
 import MainNavbar from './MainNavbar';
 import CoursePage from '../pages/CoursePage';
+import Forum from './Forum/aForum';
 
-import Header from '../components/Header';
 
 const Layout = () => {
   return (
@@ -15,7 +15,9 @@ const Layout = () => {
         <div className='layout__page'>
           <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='/courses/:courseId' element={<CoursePage />} />
+            <Route path='/courses/:courseId' element={<CoursePage />} >
+              <Route path='forum' element={<Forum />} />
+            </Route>
           </Routes>
         </div>
       </div>
