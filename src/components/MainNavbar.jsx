@@ -12,7 +12,7 @@ export const MainNavbar = () => {
     <nav className="main-navbar">
         <img src={HorLogo} className='main-navbar__logo' alt='logo-utfsm'></img>
         <NavLink
-         to="/" className={MainNavLinkClass}>Main page</NavLink>
+         to="/" className={MainNavLinkClass}>Página de Inicio</NavLink>
     </nav>
     )
 };
