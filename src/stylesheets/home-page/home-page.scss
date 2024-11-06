@@ -1,0 +1,10 @@
+.home-page {
+    padding: 20px;
+  
+    &__course-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);  // 4 columns
+      gap: 16px;  // Space between cards
+      padding: 16px;  // Optional padding around the grid
+    }
+  };

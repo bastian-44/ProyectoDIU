@@ -12,7 +12,7 @@ const NewPostForm = ({ addPost }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='new-post-form'>
       <div>
         <label>Título:</label>
         <input

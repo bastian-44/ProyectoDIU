@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 @import './layout/index.scss';
+@import './home-page/index.scss';
+
 @import './nav-bar/index.scss';
+@import './main-navbar/index.scss';
+@import './course-navbar/index.scss';
 @import './lightbulb-page/index.scss';
-@import './home/home.scss';
+@import './course-card/index.scss';
+@import './forum/index.scss';
+@import './calendar/index.scss';
+@import './material/index.scss';
+@import './grades/index.scss';
+@import './deliverables/index.scss';
 
 html, body {
   padding: 0;

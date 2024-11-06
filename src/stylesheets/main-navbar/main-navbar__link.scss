@@ -1,0 +1,14 @@
+.main-navbar__link {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px;
+    color: rgb(4, 100, 253);
+  
+    &--active {
+      background:#b4b4b4;
+      color: white;
+    }
+  }
+  

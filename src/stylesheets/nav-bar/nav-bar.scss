@@ -1,17 +1,5 @@
 .nav-bar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #206c9e;
-  padding: 1px 20px;
-  color: white;
-}
-
-.nav-left, .nav-right {
-  flex: 1;
-}
-
-.nav-center {
-  flex: 2;
-  text-align: center;
+  background-color: #ccc;
+  padding-left: 20px;
 }
