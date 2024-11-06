@@ -13,7 +13,7 @@ const Forum = () => {
   };
 
   return (
-    <div>
+    <div className="forum-container">
       <h1>Foro</h1>
       <NewPostForm addPost={addPost} />
       <PostList posts={posts} />

@@ -1,0 +1,43 @@
+.new-post-form {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-post-form label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.new-post-form input[type="text"],
+.new-post-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  resize: vertical; /* Permite ajustar la altura del textarea */
+}
+
+.new-post-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0044cc;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-post-form button:hover {
+  background-color: #003399;
+}

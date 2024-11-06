@@ -1,6 +1,26 @@
 .course-navbar {
-    display: flex;
-    background-color: #ccc;
-    padding-left: 20px;
-  };
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0044cc; /* Color de fondo para la barra */
+  padding: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+.course-navbar__link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.course-navbar__link:hover {
+  background-color: #003399; /* Color de fondo al pasar el ratón */
+}
+
+.course-navbar__link--active {
+  background-color: #002266; /* Color para el enlace activo */
+  font-weight: bold;
+}
