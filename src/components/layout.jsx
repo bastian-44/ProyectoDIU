@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
 import MainNavbar from './MainNavbar';
 import CoursePage from '../pages/CoursePage';
-import Forum from './Forum/aForum';
+import CourseMain from './CourseMain';
+import Forum from './Forum/Forum';
 
 
 const Layout = () => {
@@ -16,6 +17,7 @@ const Layout = () => {
           <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='/courses/:courseId' element={<CoursePage />} >
+              <Route index element={<CourseMain />} /> {/* Default view */}
               <Route path='forum' element={<Forum />} />
             </Route>
           </Routes>

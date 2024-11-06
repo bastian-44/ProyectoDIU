@@ -11,6 +11,7 @@ const CourseNavbar = () => {
 
     return(
     <nav className='course-navbar'>
+      <NavLink to='' end className={CourseNavLinkClass}>Inicio</NavLink>
       <NavLink to='forum' className={CourseNavLinkClass}>Foros</NavLink>
       <NavLink to='exam-dates' className={CourseNavLinkClass}>Calendario</NavLink>
       <NavLink to='deliverables' className={CourseNavLinkClass}>Entregas </NavLink>

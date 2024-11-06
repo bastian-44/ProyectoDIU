@@ -1,8 +1,6 @@
 import React from 'react';
 import { useParams, Outlet } from 'react-router-dom';
 import CourseNavbar from '../components/CourseNavbar';
-import LightBulbOn from '../assets/light-on.png';
-import LightBulbOff from '../assets/light-off.png';
 import coursesData from '../data/coursesData';
 
 export const CoursePage = () => {
