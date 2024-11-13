@@ -1,23 +1,80 @@
+.course-card-container {
+    display: grid; /* Usamos grid para las tarjetas */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Define columnas automáticas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espacio alrededor del contenedor */
+}
+
 .course-card {
     display: block;
-    border: 1px solid blue;
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Bordes más redondeados */
     text-decoration: none;
-    border-radius: 4px;
-    padding: 16px;
-    margin: 10px;
-    background-color: #ccc;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco limpio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transiciones suaves */
+}
 
-    &__title {
-        font-size: 1.5rem;
-        margin-bottom: 8px;
-    }
+/* Efectos hover */
+.course-card:hover {
+    transform: translateY(-5px); /* Elevación al pasar el mouse */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    background-color: #e6f7ff; /* Fondo ligeramente azulado */
+}
 
-    &__description {
-        font-size: 1rem;
-        margin-bottom: 8px;
-    }
+/* Título de la tarjeta */
+.course-card__title {
+    font-size: 1.7rem; /* Tamaño ligeramente mayor */
+    font-weight: 600; /* Peso más fuerte para el título */
+    color: #003366; /* Color oscuro para buen contraste */
+    margin-bottom: 12px;
+    text-transform: capitalize; /* Capitalizar el título */
+}
 
-    &:visited {
-        color: inherit;  // Avoids color change and underlining after clicking a card
-      }
+/* Departamento o área */
+.course-card__department {
+    font-size: 1.2rem;
+    color: #007bff; /* Azul más intenso */
+    font-weight: 500; /* Peso de fuente moderado */
+    margin-bottom: 6px;
+}
+
+/* Iniciales del curso */
+.course-card__initials {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+/* Semestre */
+.course-card__semester {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+/* Sección del curso */
+.course-card__section {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+/* Descripción del curso */
+.course-card__description {
+    font-size: 1rem; /* Hacer la descripción más legible */
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.4; /* Aumentar interlineado para mejorar la legibilidad */
+}
+
+/* Estilo al estado visited */
+.course-card:visited {
+    color: inherit;
+}
+
+/* Asegurar que las tarjetas tengan el mismo tamaño al hacer hover */
+.course-card-container {
+    max-width: 100%;
 }

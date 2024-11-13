@@ -1,0 +1,58 @@
+.course-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-main h1 {
+  color: #2c3e50;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.course-main p {
+  color: #555;
+  font-size: 1.1em;
+}
+
+.course-summary,
+.upcoming-activities {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-summary h2,
+.upcoming-activities h2 {
+  font-size: 1.5em;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.course-summary ul,
+.upcoming-activities ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-summary li,
+.upcoming-activities li {
+  font-size: 1.1em;
+  color: #2c3e50;
+}
+
+.course-summary li strong,
+.upcoming-activities li strong {
+  color: #2980b9;
+}
+
+.course-summary p {
+  font-size: 1.2em;
+  color: #2c3e50;
+  font-weight: bold;
+}

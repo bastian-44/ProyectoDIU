@@ -14,7 +14,7 @@ const NewPostForm = ({ addPost }) => {
   return (
     <form onSubmit={handleSubmit} className='new-post-form'>
       <div>
-        <label>Título:</label>
+        <label>Título del post:</label>
         <input
           type="text"
           value={title}

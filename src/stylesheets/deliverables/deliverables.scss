@@ -1,31 +1,37 @@
-.deliverables-container {
-  max-width: 600px;
+.deliverables-wrapper {
+  max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
   font-family: Arial, sans-serif;
+}
+
+.deliverables-header {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.deliverables-content {
+  display: flex;
+  align-items: flex-start;
   background-color: #f9f9f9;
+  padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .deliverables-list {
+  flex: 1;
+  margin-right: 20px;
   list-style-type: none;
   padding: 0;
 }
 
 .deliverable-item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
-}
-
-.deliverable-item:last-child {
-  border-bottom: none;
 }
 
 .deliverable-title {
@@ -33,9 +39,22 @@
   color: #0044cc;
 }
 
-.deliverable-date {
+.deliverable-date,
+.deliverable-status,
+.deliverable-feedback {
+  font-size: 0.9em;
   color: #777;
-  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.delivered {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.pending {
+  color: #dc3545;
+  font-weight: bold;
 }
 
 .view-button {
@@ -46,61 +65,39 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 8px;
 }
 
 .view-button:hover {
   background-color: #003399;
 }
 
-.upload-form-container {
-  margin-top: 20px;
-  padding: 15px;
-  border-top: 1px solid #ddd;
+.upload-section {
+  flex: 1;
+  max-width: 300px;
 }
 
-.upload-form-container h3 {
+.upload-form-container {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.file-preview {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f0f8ff;
+  border-radius: 4px;
+}
+
+.file-preview span {
+  font-weight: bold;
   color: #0044cc;
 }
 
-.upload-form-container p {
+.file-preview p {
   color: #777;
-}
-
-.upload-form-container form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-
-#file-upload {
-  margin-bottom: 10px;
-}
-
-.upload-form-container button {
-  background-color: #0044cc;
-  color: white;
-  border: none;
-  padding: 8px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.upload-form-container button:hover {
-  background-color: #003399;
-}
-
-.back-button {
-  margin-top: 10px;
-  background-color: #ddd;
-  color: #333;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-  background-color: #ccc;
+  margin-top: 5px;
 }

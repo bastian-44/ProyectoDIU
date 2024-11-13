@@ -10,7 +10,8 @@ const CourseCard = ({ course }) => {
                 <p className="course-card__department">{course.department}</p>
                 <p className="course-card__initials">{course.initials}</p>
                 <p className="course-card__semester">{course.semester}</p>
-                <p className="course-card__section">{course.section}</p>
+                <p className="course-card__section">Paralelo: {course.section}</p>
+                <p className="course-card__description">{course.description}</p>
             </div>
         </NavLink>
     );
